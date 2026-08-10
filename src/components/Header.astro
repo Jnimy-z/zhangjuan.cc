@@ -1,5 +1,5 @@
 ---
-import LanguageSwitcher from "./LanguageSwitcher.astro";
+
 const { siteConfig } = Astro.props;
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
@@ -57,7 +57,6 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
         )
       }
     </ul>
-    <LanguageSwitcher />
   </nav>
 </header>
 

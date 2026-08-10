@@ -17,7 +17,7 @@ const getSwitchLink = (targetLang: string) => {
 };
 ---
 
-<nav class="language-switcher">
+<nav class="language-switcher transition-all duration-300">
   {
     languages.map((lang) => (
       <a
@@ -32,13 +32,14 @@ const getSwitchLink = (targetLang: string) => {
 
 <style>
   .language-switcher {
-    position: absolute;
-    right: 0.9rem;
+    position: fixed;
+    right: 1.9rem;
     top: 0.9rem;
     display: flex;
     gap: 0.75rem;
     align-items: center;
     font-size: 0.9rem;
+    z-index: 99;
   }
   .language-switcher a {
     color: #6b7280;
