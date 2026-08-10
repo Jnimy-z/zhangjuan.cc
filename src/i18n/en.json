@@ -1,0 +1,113 @@
+{
+  "name": "Juan Zhang",
+  "title": "Frontend Developer",
+  "description": "Juan Zhang's personal website",
+  "accentColor": "#1d4ed8",
+  "headerName": {
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "social": {
+    "email": "206620832@qq.com",
+    "github": "https://github.com/Jnimy-z/"
+  },
+  "aboutMe": "5 years of frontend development experience, proficient in Vue2 and React, with a strong focus on data visualization and enterprise back-office systems. Worked on large-scale projects for banking and government sectors, solving challenges in performance optimization, component encapsulation, and map interactions. Self‑motivated, reliable, and detail‑oriented, continuously learning new technologies. Currently based in Chengdu, seeking frontend development roles.",
+  "skills": [
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "Vue2",
+    "jQuery",
+    "ECharts",
+    "Ant Design Vue",
+    "OpenLayers"
+  ],
+  "projects": [
+    {
+      "name": "Data Security Integrated Management System (PC)",
+      "description": "An internal back‑office management system for a major financial institution, covering user management, workflow approval, ledger management, risk monitoring dashboard, annual task management, training courses, and a mobile mini‑program.",
+      "time": "2025.11 – Present",
+      "skills": {
+        "PC": ["Vue2", "Ant Design Vue", "PDF.js"],
+        "Mobile": ["React", "Ant Design Mobile", "ECharts"]
+      },
+      "bullets": [
+        "Implemented full‑featured pages for both PC and mobile, including form caching, file preview/download, and infinite scrolling lists.",
+        "Developed data visualization dashboards (pie charts, bar charts, etc.) with customized pagination for chart legends.",
+        "Optimized download experience, resolved request race conditions, and fixed drag‑and‑drop compatibility issues in table components."
+      ]
+    },
+    {
+      "name": "Department Solution Portal",
+      "description": "A solution showcase portal built for the business department, targeting frontline employees. Includes carousel, trending topics, panorama, course display, customer cases, expert introductions, lab environment, and integrated sales charts.",
+      "time": "2024.02 – 2025.08",
+      "skills": ["jQuery", "ECharts"],
+      "bullets": [
+        "Independently designed page layouts and implemented UI components.",
+        "Used ECharts to visualize project sales trends and visitor statistics.",
+        "Optimized initial page load performance by consolidating API requests."
+      ]
+    },
+    {
+      "name": "Smart City Command Dashboard (7K Resolution)",
+      "description": "A custom ultra‑high‑definition command dashboard for a municipal government, displaying real‑time incident information and map data.",
+      "time": "2023.02 – 2023.09",
+      "skills": ["Vue2", "ECharts", "WebSocket", "OpenLayers"],
+      "bullets": [
+        "Implemented map interactions (camera marker popups, patrol route drawing).",
+        "Developed 9 ECharts chart modules (bar, line, donut) with custom tooltips.",
+        "Built a custom word‑cloud component to display real‑time trending keywords.",
+        "Pushed live alert lists via WebSocket with auto‑scrolling updates."
+      ]
+    },
+    {
+      "name": "Traffic Command Dashboard (1080P)",
+      "description": "A traffic monitoring dashboard for a district government, showing police deployment, real‑time alerts, and device status.",
+      "time": "2023.02 – 2023.04",
+      "skills": ["Vue2", "ECharts", "WebSocket"],
+      "bullets": [
+        "Developed the full‑screen interface and integrated data APIs based on design mockups.",
+        "Integrated weather data (OpenWeatherMap with Gaode API fallback).",
+        "Customized ECharts map styling to display police force data on hover.",
+        "Built a curved carousel component for multi‑metric cards.",
+        "Kept data up‑to‑date via polling intervals.",
+        "Resolved iframe embedding issues using Nginx and implemented responsive layout."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "A Financial Technology Project (On‑site)",
+      "title": "Frontend Developer",
+      "dateRange": "2025.11 – Present",
+      "bullets": [
+        "Responsible for frontend iteration of a financial institution's internal management system, covering both PC (Vue2) and mobile (React) development, including data dashboards, workflow approval, and ledger management."
+      ]
+    },
+    {
+      "company": "A Technology Enterprise Project (Outsourced)",
+      "title": "Software R&D Engineer",
+      "dateRange": "2023.11 – 2025.08",
+      "bullets": [
+        "Built the department's internal portal and solution showcase platform, while also contributing to cloud service migration, scripting, and project operation analysis across cross‑functional teams."
+      ]
+    },
+    {
+      "company": "A Software Company",
+      "title": "Frontend Developer",
+      "dateRange": "2021.06 – 2023.09",
+      "bullets": [
+        "Developed enterprise‑level projects including data dashboards and back‑office systems based on UI designs, covering data integration, performance optimization, and SSO integration, with all projects integrated into the company's unified platform."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "A University",
+      "degree": "Computer Science · Bachelor · Software Engineering",
+      "dateRange": "2017 – 2021"
+    }
+  ]
+}

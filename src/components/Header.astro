@@ -1,6 +1,6 @@
 ---
-import { siteConfig } from "../config";
-
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+const { siteConfig } = Astro.props;
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
@@ -17,7 +17,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           href="#about"
           class="text-gray-700 hover:text-black transition-colors font-medium"
         >
-          About
+          {siteConfig.headerName.about}
         </a>
       </li>
       {
@@ -27,7 +27,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               href="#projects"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Projects
+              {siteConfig.headerName.projects}
             </a>
           </li>
         )
@@ -39,7 +39,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               href="#experience"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Experience
+              {siteConfig.headerName.experience}
             </a>
           </li>
         )
@@ -51,12 +51,13 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
               href="#education"
               class="text-gray-700 hover:text-black transition-colors font-medium"
             >
-              Education
+              {siteConfig.headerName.education}
             </a>
           </li>
         )
       }
     </ul>
+    <LanguageSwitcher />
   </nav>
 </header>
 

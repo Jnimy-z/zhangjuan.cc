@@ -1,0 +1,59 @@
+---
+// 获取当前页面的完整路径（包含语言前缀）
+const currentPath = Astro.url.pathname;
+
+// 定义支持的语言
+const languages = [
+  { code: "zh-cn", label: "中文" },
+  { code: "en", label: "English" },
+];
+
+// 获取当前语言（从路径中提取）
+const currentLang = currentPath.startsWith("/en") ? "en" : "zh-cn";
+
+// 构建切换链接：保持当前页面路径，只改变语言前缀
+const getSwitchLink = (targetLang: string) => {
+  return currentPath.replace(/zh-cn|en/, targetLang);
+};
+---
+
+<nav class="language-switcher">
+  {
+    languages.map((lang) => (
+      <a
+        href={getSwitchLink(lang.code)}
+        class={currentLang === lang.code ? "active" : ""}
+      >
+        {lang.label}
+      </a>
+    ))
+  }
+</nav>
+
+<style>
+  .language-switcher {
+    position: absolute;
+    right: 0.9rem;
+    top: 0.9rem;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  .language-switcher a {
+    color: #6b7280;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+  }
+  .language-switcher a:hover {
+    color: #1f2937;
+    background-color: #f3f4f6;
+  }
+  .language-switcher a.active {
+    color: #1d4ed8;
+    font-weight: 600;
+    background-color: #e0e7ff;
+  }
+</style>
